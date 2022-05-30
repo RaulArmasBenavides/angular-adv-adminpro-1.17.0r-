@@ -9,7 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
-
+import { NgChartsModule } from 'ng2-charts/ng2-charts';
 
 
 
@@ -22,7 +22,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+    NgChartsModule
   ],
   bootstrap: [AppComponent]
 })
