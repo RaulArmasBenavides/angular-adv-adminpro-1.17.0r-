@@ -1,6 +1,12 @@
 <div class="card">
-    <div class="chart-container" style="width: 800px; height: 600px;">
-        <canvas class="my-chart">
-        </canvas>
+    <div class="chart-wrapper">
+        <canvas baseChart 
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
     </div>
 </div>
