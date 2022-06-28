@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
-import { Label } from 'ng2-charts';
+import { MultiDataSet, Label } from 'ng2-charts';
+
 @Component({
   selector: 'app-dona',
   templateUrl: './dona.component.html'
@@ -9,16 +10,20 @@ import { Label } from 'ng2-charts';
 
 export class DonaComponent{
   
-  barChartOptions: ChartOptions = {
-    responsive: true,
-  };
-  barChartLabels: Label[] = ['Apple', 'Banana', 'Kiwifruit', 'Blueberry', 'Orange', 'Grapes'];
-  barChartType: ChartType = 'bar';
-  barChartLegend = true;
-  barChartPlugins = [];
-  barChartData: ChartDataSets[] = [
-    { data: [45, 37, 60, 70, 46, 33], label: 'Best Fruits' }
+  public doughnutChartLabels: Label[] = ['PHP', '.Net', 'Java'];
+   
+  public doughnutChartData: MultiDataSet = [
+    [250, 150, 100],
+    [160, 150, 130],
+    [250, 130, 70],
   ];
+   
+  public doughnutChartType: ChartType = 'doughnut';
+   
+  constructor() { }
+     
+  ngOnInit() {
+  }
 
   
    }
