@@ -8,6 +8,7 @@ import { IncrementadorComponent } from './incrementador/incrementador.component'
 import { DonaComponent } from './dona/dona.component';
 import { ModalImagenComponent } from './modal-imagen/modal-imagen.component';
 import { BarchartComponent } from './barchart/barchart.component';
+import { RadarComponent } from './radar/radar.component';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { BarchartComponent } from './barchart/barchart.component';
     IncrementadorComponent,
     DonaComponent,
     ModalImagenComponent,
-    BarchartComponent
+    BarchartComponent,
+    RadarComponent
   ],
   exports: [
     IncrementadorComponent,
     DonaComponent,
     ModalImagenComponent,
-    BarchartComponent
+    BarchartComponent,
+    RadarComponent
   ],
   imports: [
     CommonModule,
