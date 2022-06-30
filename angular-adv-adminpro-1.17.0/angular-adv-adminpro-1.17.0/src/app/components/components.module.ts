@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'
-import {ChartsModule } from  'ng2-charts';
-//import { NgChartsModule } from 'ng2-charts';
+//import {ChartsModule } from  'ng2-charts';
+import { NgChartsModule } from 'ng2-charts';
 
 import { IncrementadorComponent } from './incrementador/incrementador.component';
 import { DonaComponent } from './dona/dona.component';
@@ -29,7 +29,7 @@ import { RadarComponent } from './radar/radar.component';
   imports: [
     CommonModule,
     FormsModule,
-    ChartsModule
+    NgChartsModule
   ]
 })
 export class ComponentsModule { }

@@ -88,7 +88,7 @@ table.dataTable {
     .sorting_desc,
     .sorting {
       cursor: pointer;
-      *cursor: hand;
+      cursor: hand;
     }
 
     th div.DataTables_sort_wrapper {
@@ -323,7 +323,7 @@ table.dataTable td {
       text-align: center;
       text-decoration: none !important;
       cursor: pointer;
-      *cursor: hand;
+      cursor: hand;
 
       color: $table-control-color !important;
       border: 1px solid transparent;

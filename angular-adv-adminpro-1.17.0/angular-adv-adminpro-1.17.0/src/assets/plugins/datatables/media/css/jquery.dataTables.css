@@ -36,7 +36,7 @@ table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
   cursor: pointer;
-  *cursor: hand;
+  cursor: hand;
 }
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
@@ -307,7 +307,7 @@ table.dataTable td {
   text-align: center;
   text-decoration: none !important;
   cursor: pointer;
-  *cursor: hand;
+  cursor: hand;
   color: #333 !important;
   border: 1px solid transparent;
   border-radius: 2px;

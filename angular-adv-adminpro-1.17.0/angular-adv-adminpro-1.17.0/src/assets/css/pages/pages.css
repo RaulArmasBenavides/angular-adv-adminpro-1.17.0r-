@@ -219,7 +219,7 @@ Notify
     z-index: 10;
     border: 5px solid #ef5350;
     border-radius: 70px;
-    -moz-animation: heartbit 1s ease-out;
+    animation: heartbit 1s ease-out;
     -moz-animation-iteration-count: infinite;
     -o-animation: heartbit 1s ease-out;
     -o-animation-iteration-count: infinite;
@@ -237,7 +237,7 @@ Notify
     right: 6px;
     top: -10px; }
 
-@-moz-keyframes heartbit {
+@keyframes heartbit {
   0% {
     -moz-transform: scale(0);
     opacity: 0.0; }
@@ -714,7 +714,7 @@ html body .waves-notransition {
   height: 2.5em;
   line-height: 2.5em;
   border-radius: 50%;
-  -webkit-mask-image: none; }
+  mask-image: none; }
 
 .waves-input-wrapper {
   border-radius: 0.2em;
@@ -859,7 +859,7 @@ Pagination
 .pagination-split li {
   margin-left: 5px;
   display: inline-block;
-  float: left; }
+ }
 
 .pagination-split li:first-child {
   margin-left: 0; }
@@ -1945,9 +1945,6 @@ form p:last-child {
   left: -9999px;
   opacity: 0; }
 
-[type="checkbox"] {
-  /* checkbox aspect */ }
-
 [type="checkbox"] + label {
   position: relative;
   padding-left: 35px;
@@ -1956,7 +1953,7 @@ form p:last-child {
   height: 25px;
   line-height: 25px;
   font-size: 1rem;
-  -webkit-user-select: none;
+  user-select: none;
   /* webkit (safari, chrome) browsers */
   -moz-user-select: none;
   /* mozilla browsers */
@@ -2134,7 +2131,7 @@ form p:last-child {
    ========================================================================== */
 .switch,
 .switch * {
-  -webkit-user-select: none;
+  user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none; }
@@ -3437,7 +3434,7 @@ table.dataTable thead .sorting:after {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  *cursor: hand;
+  cursor: hand;
   color: #67757c;
   border: 1px solid #ddd; }
 

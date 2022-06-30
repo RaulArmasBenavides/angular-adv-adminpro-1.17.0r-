@@ -8,11 +8,11 @@ Preloader
     position: fixed;
     z-index: 99999;
     background: #fff;
-    .cssload-speeding-wheel{
-        position: absolute;
-        top: calc(50% - 3.5px);
-        left: calc(50% - 3.5px);
-    }
+}
+.cssload-speeding-wheel{
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
 }
 .loader,
 .loader__figure {
