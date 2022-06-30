@@ -13141,7 +13141,7 @@ a.badge:focus {
     float: left
 }
 .list-group-item>.badge+.badge {
-    margin-lef: 5px
+    margin-left: 5px
 }
 .nav-pills>li>a>.badge {
     margin-right: 3px
