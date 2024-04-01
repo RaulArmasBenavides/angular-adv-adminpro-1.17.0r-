@@ -23,7 +23,7 @@ declare const gapi: any;
 export class UsuarioService {
 
   public auth2: any;
-  public usuario: Usuario;
+  public usuario!: Usuario;
 
   constructor( private http: HttpClient, 
                 private router: Router,
@@ -105,7 +105,7 @@ export class UsuarioService {
 
   }
 
-  actualizarPerfil( data: { email: string, nombre: string, role: string } ) {
+  actualizarPerfil( data: { email: string, nombre: string, role: string |undefined} ) {
 
     data = {
       ...data,
@@ -127,7 +127,7 @@ export class UsuarioService {
 
   }
 
-  loginGoogle( token ) {
+  loginGoogle( token:any ) {
     
     return this.http.post(`${ base_url }/login/google`, { token } )
                 .pipe(

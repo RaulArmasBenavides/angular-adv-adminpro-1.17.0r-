@@ -15,9 +15,9 @@ import { Usuario } from '../../models/usuario.model';
 })
 export class PerfilComponent implements OnInit {
 
-  public perfilForm: FormGroup;
+  public perfilForm!: FormGroup;
   public usuario: Usuario;
-  public imagenSubir: File;
+  public imagenSubir!: File;
   public imgTemp: any = null;
 
   constructor( private fb: FormBuilder,
@@ -69,7 +69,7 @@ export class PerfilComponent implements OnInit {
   subirImagen() {
 
     this.fileUploadService
-      .actualizarFoto( this.imagenSubir, 'usuarios', this.usuario.uid )
+      .actualizarFoto( this.imagenSubir, 'usuarios', (this.usuario.uid??"") )
       .then( img => {
         this.usuario.img = img;
         Swal.fire('Guardado', 'Imagen de usuario actualizada', 'success');
